@@ -16,7 +16,7 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
         
           // Add X axis
           var x = d3.scaleLinear()
-            .domain([0, 500])
+            .domain([0, 1000])
             .range([ 0, width ]);
           svg.append("g")
             .attr("transform", "translate(0," + height + ")")
@@ -35,7 +35,7 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
             .data(data)
             .enter()
             .append("circle")
-            .attr("cx", function (d) { return x(d.Step); } )
+            .attr("cx", function (d) { return x(d.Datetime); } )
             .attr("cy", function (d) { return y(d.Temp); } )
             .attr("r", 1.5)
             .style("fill", "#69b3a2")
