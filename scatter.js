@@ -41,5 +41,3 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
             .style("fill", "#69b3a2")
         
         })
-
-d3.select('#scatter')
