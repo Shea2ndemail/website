@@ -16,7 +16,7 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
         
           // Add X axis
           var x = d3.scaleLinear()
-            .domain([0, 1000])
+            .domain([0, 5])
             .range([ 0, width ]);
           svg.append("g")
             .attr("transform", "translate(0," + height + ")")
